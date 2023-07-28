@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #809bce;
+}
+
+.card-body{
+  max-width: 400px;
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label{
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #809bce;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+form input[type='submit']{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #809bce;
+}
+
+.button:hover {
+  background-color: #6118a5;
+}

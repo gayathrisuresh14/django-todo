@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="{% static 'detail_style.css' %}">
+</head>
+<body>
+<div class="card-body">
+    <form method="post" action="">
+    <h1>Task Details</h1>
+    <h2>{{task}}</h2>
+    {% if task.completed %}<strong style="color: MediumSeaGreen">Status:</strong> Completed {% else %} <strong style="color: Tomato">Status:</strong> Pending {% endif %}
+        <br>
+    <a class="button-link" href="{% url 'task' %}">Go Back</a>
+</form>
+</div>
+
+</body>
+</html>

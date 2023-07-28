@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.card-body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  margin-bottom: 20px;
+
+}
+
+form label{
+  margin-bottom: 20px;
+}
+
+form input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+
+}
+
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.button-container{
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-inline: 30px;
+  margin-block: 30px;
+  font-size: 16px;
+  background-color: #809bce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #6118a5;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #809bce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #6118a5;
+
+}

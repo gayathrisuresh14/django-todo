@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'register_style.css' %}">
+</head>
+<body>
+
+<div class="card-body">
+    <h1>Register</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label>{{form.username.label}}</label>
+    {{form.username}}
+    <label>{{form.password1.label}}</label>
+    {{form.password1}}
+    <label>{{form.password2.label}}</label>
+    {{form.password2}}
+    <input class="button" type="submit" value="Register">
+
+  </form>
+  <p>Already have an account? <a href="{% url 'login' %}">Login</a> </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="{% static 'delete_style.css' %}">
+</head>
+<body>
+<div class="card-body">
+  <form method="post" action="">
+    {% csrf_token %}
+      <p>Are you sure you want to delete <strong>"{{task}}"</strong>?</p>
+      <input class="button" type="submit" value="Delete">
+      <a class="button-link" href="{% url 'task' %}">Go Back</a>
+  </form>
+</div>
+</body>
+</html>

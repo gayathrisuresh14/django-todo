@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'create_style.css' %}">
+
+</head>
+<body>
+<div class="card-body">
+    <form method="post" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+        <div class="button-container">
+            <input class="button" type="submit" value="Submit">
+             <a class="button-link" href="{% url 'task' %}">Go Back</a>
+        </div>
+
+</form>
+</div>
+
+</body>
+</html>

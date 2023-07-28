@@ -1,0 +1,68 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #809bce;
+
+}
+
+.card-body{
+  max-width: 400px;
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.card-body header{
+  text-align: center;
+  color: linear-gradient(135deg, #71b7e6, #9b59b6);
+  margin-bottom: 30px;
+}
+
+hr{
+  width: 100%;
+  border: 1px solid SlateBlue;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-bottom: 20px;
+}
+
+
+form input[type='text'],
+form input[type='password']{
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #755194;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+
+
+form input[type='submit']{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #809bce;
+}
+
+.button:hover {
+  background-color: #6118a5;
+}
